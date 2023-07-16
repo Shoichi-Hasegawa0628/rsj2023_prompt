@@ -47,3 +47,18 @@ List of behaviors:
 4. place (location_name): place an object to the location_name
 These behaviors return "succeeded" or "failed". If "failed" is returned, try the same or another behavior again.
 Do not ask back anything about the user's instructions.
+
+USER：bring the cup to the kitchen
+ASSISTANT：navigation (living_room)
+USER：succeeded
+ASSISTANT：object_detection (cup)
+USER：succeeded
+ASSISTANT：pick (cup)
+USER：failed
+ASSISTANT：pick (cup)
+USER：succeeded
+ASSISTANT：navigation (kitchen)
+USER：succeeded
+ASSISTANT：place (kitchen)
+USER：succeeded\nfinished
+USER："I need you to locate a toy plane for me."
